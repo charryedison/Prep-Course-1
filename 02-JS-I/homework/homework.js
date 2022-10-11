@@ -1,20 +1,26 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
+// 1)
 // Crea una variable "string", puede contener lo que quieras:
 const nuevaString = "Hola";
 
+// 2)
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 123;
 
+// 3) 
 // Crea una variable booleana:
 const nuevoBool = 5 > 1;
 
+// 4)
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
 
+// 5)
 // Resuelve el siguiente problema matemático:
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
+//6)
 // Resuelve el siguiente problema matemático:
 const nuevoModulo = 21 % 5 === 1;
 
@@ -25,12 +31,14 @@ const nuevoModulo = 21 % 5 === 1;
 // Pista: "console.log()" NO fucionará.
 // No cambies los nombres de las funciones.
 
+//7)
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
   return str;
 }
 
+//8)
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
@@ -38,24 +46,28 @@ function suma(x, y) {
   return x + y;
 }
 
+//9)
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
   return  x- y;
 }
 
+//10)
 function multiplica(x, y) {
   // Multiplica "x" por "y" y devuelve el valor
   // Tu código:
   return x * y;  
 }
 
+//11)
 function divide(x, y) {
   // Divide "x" entre "y" y devuelve el valor
   // Tu código:
  return x / y;  
 }
 
+//12)
 function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
@@ -67,6 +79,7 @@ function sonIguales(x, y) {
   }
 }
 
+//13)
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
@@ -78,6 +91,7 @@ function tienenMismaLongitud(str1, str2) {
   }
 }
 
+//14)
 function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
@@ -89,6 +103,7 @@ function menosQueNoventa(num) {
   }
 }
 
+//15)
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
@@ -100,12 +115,14 @@ function mayorQueCincuenta(num) {
   }
 }
 
+//16)
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
  return x % y; 
 }
 
+//17)
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
@@ -117,6 +134,7 @@ function esPar(num) {
   }
 }
 
+//18)
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
@@ -128,6 +146,7 @@ function esImpar(num) {
   }
 }
 
+//19)
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
@@ -135,36 +154,42 @@ function elevarAlCuadrado(num) {
   return num ** 2;
 }
 
+//20)
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
   return num ** 3;
 }
 
+//21)
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
   return num ** exponent;
 }
 
+//22)
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round.(num);
+  return Math.round(num);
 }
 
+//23)
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  
+  return Math.ceil(num);
 }
 
+//24)
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+ return Math.random();
 }
 
+//25)
 function esPositivo(numero) {
   //La función va a recibir un entero. Devuelve como resultado una cadena de texto que indica si el número es positivo o negativo. 
   //Si el número es positivo, devolver ---> "Es positivo"
@@ -173,17 +198,20 @@ function esPositivo(numero) {
   
 }
 
+//26)
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  return str + '' + '!';
 }
 
+//27)
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  
+  return nombre + '' + apellido;
 }
 
 function obtenerSaludo(nombre) {
