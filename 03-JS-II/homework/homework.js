@@ -110,6 +110,7 @@ function estaEnRango(numero) {
   }
 }
 
+//41
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
   // Ejemplo: 0.8 -> false
@@ -118,16 +119,32 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  
+  if((numero / 2) === 0 && (numero/2) === -0){
+    return true;
+  }else if((numero/2) === 0.0){
+    return false;
+  }
 }
 
+//42
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if(numero % 3 === 0){
+    return "Fizz";
+  }else if(numero % 5 === 0){
+    return "Buzz";
+  }else if(numero % 3 === 0 && numero % 5 === 0){
+    return "Fizzbuzz";
+  }else{
+    return numero;
+  }
+
 }
 
+//43
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
   //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
@@ -135,16 +152,35 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  if(num1 > num2 && num1 > num3 && num1/2 === 0){
+    return "Número 1 es mayor y positivo";
+  }else if(num1 || num2 || num3 < 0){
+    return "Hay Negativos";
+  }else if (num3 > num1 && num2){
+    return num3++;
+  }else if(num1 || num2 || num3 === 0){
+    return "Error"
+  }else{
+    return false;
+  }
+
 }
 
+//44
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
+  if(numero / numero === 1 && numero / 1 === numero){
+    return true; 
+  }else{
+    return false;
+  }
 }
 
+//45
 function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
