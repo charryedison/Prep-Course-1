@@ -3,6 +3,10 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
+  let i = 0;
+  for (let i = 0; i < array.length; i++) {
+    return devolverPrimerElemento[0];
+}
 }
 
 
